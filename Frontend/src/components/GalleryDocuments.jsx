@@ -1,8 +1,13 @@
 import React from "react";
 
-import B1 from "../assets/B1.png";
-import B2 from "../assets/B2.png";
-import B3 from "../assets/B3.png";
+import G1 from "../assets/G1.png";
+import G2 from "../assets/G2.png";
+import G3 from "../assets/G3.png";
+import G4 from "../assets/G4.png";
+import G5 from "../assets/G5.png";
+import G6 from "../assets/G6.png"
+import G7 from "../assets/G7.png"
+import G8 from "../assets/G8.png"
 
 const items = [
   {
@@ -13,7 +18,7 @@ const items = [
       "Housing and loan-related matters",
       "Welfare fund utilization",
     ],
-    image: B1,
+    image: G1,
     reverse: false,
   },
   {
@@ -24,7 +29,7 @@ const items = [
       "Health check-up programs",
       "Accident prevention measures",
     ],
-    image: B2,
+    image: G2,
     reverse: true,
   },
   {
@@ -35,7 +40,7 @@ const items = [
       "Salary, allowances, overtime issues",
       "Workplace harassment cases",
     ],
-    image: B3,
+    image: G3,
     reverse: false,
   },
   {
@@ -46,31 +51,31 @@ const items = [
       "Leave policies and holidays",
       "Promotion and appraisal systems",
     ],
-    image: B1,
+    image: G4,
     reverse: true,
   },
   {
     title: "Training & Development",
     points: ["Skill upgradation", "Workshops", "Leadership training"],
-    image: B2,
+    image: G5,
     reverse: false,
   },
   {
     title: "Employee Engagement",
     points: ["Cultural events", "Sports activities", "Team building"],
-    image: B3,
+    image: G6,
     reverse: true,
   },
   {
     title: "Social Welfare",
     points: ["Community programs", "CSR initiatives"],
-    image: B2,
+    image: G7,
     reverse: false,
   },
   {
     title: "Infrastructure Support",
     points: ["Workplace facilities", "Transport support"],
-    image: B1,
+    image: G8,
     reverse: true,
   },
 ];

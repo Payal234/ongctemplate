@@ -14,7 +14,6 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-6">
         {/* Desktop Navbar */}
         <div className="relative flex items-center justify-between h-28">
-          
           {/* Left Menu */}
           <nav className="hidden md:flex gap-8 text-base font-medium text-gray-800">
             <a href="#about" className="cursor-pointer hover:text-sky-500 transition-colors">ABOUT</a>

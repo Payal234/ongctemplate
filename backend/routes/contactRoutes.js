@@ -14,7 +14,7 @@ router.post("/", async (req, res) => {
       return res.status(400).json({ error: "Please fill required fields" });
     }
 
-    const contact = await Contact.create({ name, email, title, message });
+    const contact = await Contact.create({ name, email, title, message, status: 'pending' });
 
     res.status(201).json({ message: "Message sent successfully", contactId: contact._id });
   } catch (err) {

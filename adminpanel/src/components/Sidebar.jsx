@@ -3,7 +3,7 @@ import logo from "../assets/logo.jpg"
 
 const Sidebar = ({ user, onConnect, onLogout, onOpenContactUser }) => {
   return (
-    <div className="w-64 bg-gray-800 text-white flex flex-col min-h-screen p-6 sticky top-0">
+    <div className="w-64 bg-gray-800 text-white flex flex-col min-h-screen p-6 fixed left-0 top-0">
       <div className="flex items-center mb-6">
         <img src={logo} alt="Logo" className="w-12 h-12 mr-4" />
         <h2 className="text-2xl font-bold">Admin Panel</h2>

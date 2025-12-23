@@ -37,7 +37,7 @@ const AdminDashboard = () => {
   if (!user) return null; // or loading spinner
 
   return (
-    <div className="flex min-h-screen">
+    <div className="min-h-screen">
       <Sidebar
         user={user}
         onConnect={handleConnect}
@@ -45,16 +45,18 @@ const AdminDashboard = () => {
         onOpenContactUser={handleOpenContactUser}
       />
 
-      {showContacts ? (
-        <ContactUser onBack={handleBack} />
-      ) : (
-        <div className="flex-1 p-8 text-white bg-gray-900">
-          <h1 className="text-3xl font-bold mb-6">
-            Welcome {user ? user.name : "Admin"} to Dashboard
-          </h1>
-          <p>Click "Contact User" to view contact form submissions.</p>
-        </div>
-      )}
+      <div className="ml-64">
+        {showContacts ? (
+          <ContactUser onBack={handleBack} />
+        ) : (
+          <div className="p-8 text-white bg-gray-900">
+            <h1 className="text-3xl font-bold mb-6">
+              Welcome {user ? user.name : "Admin"} to Dashboard
+            </h1>
+            <p>Click "Contact User" to view contact form submissions.</p>
+          </div>
+        )}
+      </div>
     </div>
   );
 };

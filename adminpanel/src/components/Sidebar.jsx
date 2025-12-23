@@ -17,13 +17,15 @@ const Sidebar = ({ user, onConnect, onLogout, onOpenContactUser }) => {
         Contact User
       </button>
 
-        {/* Logout Button */}
-      <button
-        onClick={onLogout}
-        className="bg-red-600 hover:bg-red-700 py-2 px-4 rounded cursor-pointer"
-      >
-        Logout
-      </button>
+      {/* Logout Button at the bottom */}
+      <div className="mt-auto">
+        <button
+          onClick={onLogout}
+          className="bg-red-600 hover:bg-red-700 py-2 px-20 rounded cursor-pointer"
+        >
+          Logout
+        </button>
+      </div>
     </div>
   );
 };

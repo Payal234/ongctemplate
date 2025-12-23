@@ -37,7 +37,7 @@ const AdminDashboard = () => {
   if (!user) return null; // or loading spinner
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-gray-900">
       <Sidebar
         user={user}
         onConnect={handleConnect}

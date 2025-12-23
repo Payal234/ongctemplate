@@ -1,5 +1,6 @@
 import React from "react";
 import Hand from "../assets/hand.jpg";
+import Hand1 from "../assets/hand1.png";
 
 
 const About = () => {
@@ -37,33 +38,44 @@ const About = () => {
         </div>
 
         {/* RIGHT COLUMN */}
-        <div className="text-slate-400 space-y-8">
-          <p className="text-sm md:text-base leading-relaxed">
-            The ONGC Workers Union is a representative body formed to safeguard
-            the rights, welfare, and professional interests of employees working
-            in Oil and Natural Gas Corporation (ONGC). The Union acts as a
-            collective voice of the workforce and works in close coordination
-            with management to ensure fair policies, safe working conditions,
-            and inclusive growth.
-          </p>
-
-          <div>
-            <h3 className="text-slate-600 font-semibold">Our Vision :</h3>
-            <p className="mt-2 text-sm md:text-base leading-relaxed">
-              To create a strong, united, and empowered workforce that thrives
-              in a fair, safe, and respectful workplace, ensuring long-term
-              welfare and professional development of all union members.
+        <div className="text-slate-400 flex items-start space-x-8">
+          <div className="flex-1 space-y-8">
+            <p className="text-sm md:text-base leading-relaxed">
+              The ONGC Workers Union is a representative body formed to safeguard
+              the rights, welfare, and professional interests of employees working
+              in Oil and Natural Gas Corporation (ONGC). The Union acts as a
+              collective voice of the workforce and works in close coordination
+              with management to ensure fair policies, safe working conditions,
+              and inclusive growth.
             </p>
+
+            <div>
+              <h3 className="text-slate-600 font-semibold">Our Vision :</h3>
+              <p className="mt-2 text-sm md:text-base leading-relaxed">
+                To create a strong, united, and empowered workforce that thrives
+                in a fair, safe, and respectful workplace, ensuring long-term
+                welfare and professional development of all union members.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-slate-600 font-semibold">Our Mission :</h3>
+              <p className="mt-2 text-sm md:text-base leading-relaxed">
+                To represent ONGC employees with integrity and unity, promote
+                welfare and safety, address grievances effectively, and contribute
+                positively to the organization’s growth while upholding
+                employees’ rights and responsibilities.
+              </p>
+            </div>
           </div>
 
-          <div>
-            <h3 className="text-slate-600 font-semibold">Our Mission :</h3>
-            <p className="mt-2 text-sm md:text-base leading-relaxed">
-              To represent ONGC employees with integrity and unity, promote
-              welfare and safety, address grievances effectively, and contribute
-              positively to the organization’s growth while upholding
-              employees’ rights and responsibilities.
-            </p>
+          {/* Hand1 image positioned to touch the right border of the screen */}
+          <div className="fixed right-0 top-1/2 transform -translate-y-1/2 z-10">
+            <img
+              src={Hand1}
+              alt="Hand pointing left"
+              className="w-24 md:w-32 lg:w-40 object-contain transform scaleX(-1)"
+            />
           </div>
         </div>
 

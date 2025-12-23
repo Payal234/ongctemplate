@@ -88,7 +88,7 @@ const GalleryDocuments = () => {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-16 bg-linear-to-br from-slate-900 to-slate-800 rounded-3xl py-16 text-white">
 
         {/* Section Header */}
-        <p className="text-xs uppercase tracking-widest text-sky-400 mb-6 underline">
+        <p className="text-xs uppercase tracking-widest text-sky-400 mb-6 underline cursor-pointer">
           GALLERY & DOCUMENTS
         </p>
         {/* Content Items */}

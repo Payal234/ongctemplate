@@ -17,11 +17,10 @@ const Bearers = () => {
   return (
     <section id="bearers" className="py-14 bg-white scroll-mt-28">
       <div className="px-4 sm:px-6 lg:px-16 max-w-7xl mx-auto">
-
         {/* Header */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-20">
           <div>
-            <p className="text-sm uppercase tracking-widest text-sky-500 mb-3">
+            <p className="text-sm uppercase tracking-widest text-sky-500 mb-3 underline cursor-pointer">
               BEARERS
             </p>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-800">
@@ -29,8 +28,11 @@ const Bearers = () => {
             </h2>
           </div>
           <p className="text-gray-400 max-w-md md:ml-auto leading-relaxed">
-            Our elected leaders represent the collective voice of ONGC employees.
-            Through democratic processes and active participation.
+            BEARERS Leadership & Representation Our elected leaders represent
+            the collective voice of ONGC employees. Through democratic processes
+            and active participation, the Office Bearers work tirelessly to
+            address concerns, implement welfare initiatives, and uphold the
+            rights of union members.
           </p>
         </div>
 

@@ -8,7 +8,7 @@ const Location = () => {
       <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5 items-start">
         {/* Left */}
         <div>
-          <p className="text-xs font-semibold tracking-widest text-sky-500 uppercase underline">
+          <p className="text-xs font-semibold tracking-widest text-sky-500 uppercase underline cursor-pointer">
             Locations
           </p>
           <h2 className="mt-5 text-2xl md:text-2xl font-semibold text-gray-700">

@@ -45,7 +45,7 @@ const ContactForm = () => {
 
       localStorage.setItem('contactId', data.contactId);
       setContactId(data.contactId);
-      setStatus({ type: "success", text: "Message sent successfully. Status: Pending approval." });
+      setStatus({ type: "success", text: "Message sent successfully. " });
       setName("");
       setEmail("");
       setTitle("");

@@ -37,6 +37,9 @@ const HeroSection = () => {
          <p className="mt-65 max-w-6xl text-white font-semibold  md:text-xl lg:text-3xl drop-shadow">
   “Committed to safeguarding the constitutional rights and welfare of SC/ST employees across all ONGC establishments nationwide.”
 </p>
+         <marquee className="mt-6 -mb-6 max-w-6xl text-white font-semibold md:text-lg lg:text-xl drop-shadow">
+  Committee Coordinator CWC: Working tirelessly for the constitutional rights and social justice of our community. AISCS&STEWA–CWC — "Together we stand for equality, justice, and welfare of all SC/ST employees across ONGC."
+</marquee>
 
 
         </div>

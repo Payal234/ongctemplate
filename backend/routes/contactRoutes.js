@@ -1,5 +1,6 @@
 const express = require("express");
 const Contact = require("../models/Contact");
+const nodemailer = require('nodemailer');
 
 const router = express.Router();
 
@@ -15,6 +16,31 @@ router.post("/", async (req, res) => {
     }
 
     const contact = await Contact.create({ name, email, title, message, status: 'pending' });
+
+    // Send thank you email
+    try {
+      const transporter = nodemailer.createTransport({
+        host: 'smtp.gmail.com',
+        port: 587,
+        secure: false, // true for 465, false for other ports
+        auth: {
+          user: process.env.EMAIL_USER,
+          pass: process.env.EMAIL_PASS
+        }
+      });
+
+      const mailOptions = {
+        from: process.env.EMAIL_USER,
+        to: email,
+        subject: 'Thank you for visiting us',
+        text: `Dear ${name},\n\nThank you for visiting us and filling out the contact form. We have received your message and will get back to you soon.\n\nBest regards,\nYour Company`
+      };
+
+      await transporter.sendMail(mailOptions);
+      console.log('Thank you email sent successfully to:', email);
+    } catch (emailError) {
+      console.error('Error sending thank you email:', emailError);
+    }
 
     res.status(201).json({ message: "Message sent successfully", contactId: contact._id });
   } catch (err) {

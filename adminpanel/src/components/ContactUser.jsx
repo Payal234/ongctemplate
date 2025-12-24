@@ -11,7 +11,7 @@ const ContactUser = ({ onBack }) => {
 
   const fetchContacts = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/contact');
+      const response = await fetch('https://ongc-backend.vercel.app/api/contact');
       if (!response.ok) {
         throw new Error('Failed to fetch contacts');
       }
@@ -30,7 +30,7 @@ const ContactUser = ({ onBack }) => {
 
   const handleApprove = async (id) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/contact/${id}`, {
+      const response = await fetch(`https://ongc-backend.vercel.app/api/contact/${id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ status: 'approved' }),

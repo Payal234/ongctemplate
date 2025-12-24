@@ -41,30 +41,20 @@ const About = () => {
         <div className="text-slate-400 flex items-start space-x-8">
           <div className="flex-1 space-y-8">
             <p className="text-sm md:text-base leading-relaxed">
-              The ONGC Workers Union is a representative body formed to safeguard
-              the rights, welfare, and professional interests of employees working
-              in Oil and Natural Gas Corporation (ONGC). The Union acts as a
-              collective voice of the workforce and works in close coordination
-              with management to ensure fair policies, safe working conditions,
-              and inclusive growth.
+              All India SC & ST Employees Welfare Association (AISCSTEWA) is a registered organization dedicated to protecting the constitutional rights and promoting the welfare of Scheduled Caste and Scheduled Tribe employees working in ONGC and its affiliated establishments.
             </p>
 
             <div>
               <h3 className="text-slate-600 font-semibold">Our Vision :</h3>
               <p className="mt-2 text-sm md:text-base leading-relaxed">
-                To create a strong, united, and empowered workforce that thrives
-                in a fair, safe, and respectful workplace, ensuring long-term
-                welfare and professional development of all union members.
+                To safeguard the interests and rights of SC/ST employees through collective representation, policy advocacy, and continuous engagement with management. We are committed to ensuring proper implementation of reservation policies, addressing grievances, and fostering unity among our community members.
               </p>
             </div>
 
             <div>
               <h3 className="text-slate-600 font-semibold">Our Mission :</h3>
               <p className="mt-2 text-sm md:text-base leading-relaxed">
-                To represent ONGC employees with integrity and unity, promote
-                welfare and safety, address grievances effectively, and contribute
-                positively to the organization’s growth while upholding
-                employees’ rights and responsibilities.
+                To create an equitable and inclusive work environment where every SC/ST employee can thrive with dignity, respect, and equal opportunities. We envision a society where constitutional provisions are fully implemented and the principles of social justice are upheld at every level of the organization.
               </p>
             </div>
           </div>

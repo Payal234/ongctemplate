@@ -23,7 +23,7 @@ const HeroSection = () => {
           {/* Middle */}
           <div>
             <h1 className="text-white font-bold text-3xl sm:text-4xl md:text-5xl mt-5 lg:text-5xl drop-shadow-lg">
-              Empowering ONGC Workforce
+              All India SC & ST Employees<br />Welfare Association
             </h1>
 
             <button className="mt-6 px-15 py-3 rounded-full
@@ -35,8 +35,7 @@ const HeroSection = () => {
 
           {/* Bottom Quote */}
          <p className="mt-65 max-w-6xl text-white font-semibold  md:text-xl lg:text-3xl drop-shadow">
-  “ONGC Employees Welfare & Development Union – Empowering Workforce,
-  Ensuring Welfare.”
+  “Committed to safeguarding the constitutional rights and welfare of SC/ST employees across all ONGC establishments nationwide.”
 </p>
 
 
